@@ -1,15 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Brust</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- tailwind and daisy ui cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
 
-   
+    <!-- Header start -->
+    <header class="mx-4">
+        <div class="max-w-7xl mx-auto">
+            <!-- lg device menu -->
+            <div
+                class="hidden lg:flex flex-col md:flex-row justify-between bg-[#F85559] items-center my-10 rounded-full px-10 py-3 text-white">
+                <!-- menu -->
+                <div class="navbar-center hidden md:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+                <!-- logo -->
+                <div>
+                    <div class="flex items-center space-x-2">
+                        <img class="w-11 h-11" src="assets/images/logo.png" alt="Logo">
+                        <p class="text-2xl font-semibold">Fruit Brust</p>
+                    </div>
+                </div>
+                <!-- search bar -->
+                <div>
+                    <div class="flex items-center relative">
+                        <input class="flex-1 py-2 pl-5 px-16 rounded-full" type="text" placeholder="Search Here...">
+                        <div class="bg-white py-2 pr-5 rounded-r-full absolute right-0">
+                            <a href="#">
+                                <img class="w-4 h-4" src="assets/images/search.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- mobile menu -->
+            <div class="flex lg:hidden justify-between items-center my-5 text-black">
+                <div>
+                    <div class="flex items-center space-x-2">
+                        <img class="w-7 h-7" src="assets/images/logo.png" alt="Logo">
+                        <p class="text-lg font-semibold">Fruit Brust</p>
+                    </div>
+                </div>
+                <!-- humberger menu -->
+                <div class="navbar-start text-black text-right">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header end -->
+
 
 </body>
+
 </html>
